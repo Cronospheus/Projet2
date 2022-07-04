@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Booki</title>
+  </head>
+  <body>
+    <header>
+      <div id="entete">
+        <a href="#">
+          <img id="logo" src="img/logo/Booki@3x.png" alt="booki" />
+        </a>
+        <nav>
+          <div class="sub_nav">
+            <a href="#logement">Hébergements</a>
+            <a href="#activite">Activités</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="find">
+        <div class="titre">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+        <div id="recherche">
+          <i class="fa-solid fa-location-dot one"></i>
+          <form>
+            <label for="site_search">Marseille,France</label>
+            <input
+              placeholder="Marseille,France"
+              name="ville"
+              type="text"
+              id="site_search"
+            />
+            <button type="submit">Rechercher</button>
+          </form>
+          <span class="loupe">
+            <i class="fa-solid fa-magnifying-glass two"></i>
+          </span>
+        </div>
+        <nav id="filtre">
+          <p>Filtres</p>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-money-bill-1-wave"></i>Économique</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-child-reaching"></i>Familial</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-heart"></i>Romantique</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-dog"></i>Animaux autorisés</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="searchResult">
+          <div class="searchResultIcon">
+            <i class="fa-solid fa-info"></i>
+          </div>
+          <p class="searchResultText">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </section>
+
+      <!--HEBERGEMENT-->
+
+      <div id="logement">
+        <section class="hote">
+          <h2>Hébergements à Marseille</h2>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="/img/Hébergement/Auberge_la_cannebière.jpg"
+                  alt="Auberge_cannebiere"
+                />
+                <h3>Auberge La Cannebière</h3>
+                <p>Nuit à partir de <strong>25€</strong></p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="/img/Hébergement/Hôtel_du_port.jpg"
+                  alt="hotel_port"
+                />
+                <h3>Hôtel du port</h3>
+                <p>Nuit à partir de 52€</p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="/img/Hébergement/Hôtel_les_mouettes.jpg"
+                  alt="hotel_mouette"
+                />
+                <h3>Hôtel les mouettes</h3>
+                <p>Nuit à partir de 76€</p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="/img/Hébergement/Hôtel_de_la_mer.jpg"
+                  alt="hotel_mer"
+                />
+                <h3>Hôtel de la mer</h3>
+                <p>Nuit à partir de 46€</p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="/img/Hébergement/Auberge_le_panier.jpg"
+                  alt="Auberge_lepanier"
+                />
+                <h3>Auberge Le Panier</h3>
+                <p>Nuit à partir de <strong>23€</strong></p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockh">
+              <div class="contenu">
+                <img
+                  src="./img/Hébergement/Hôtel_chez_amina.jpg"
+                  alt="hotel_amina"
+                />
+                <h3>Hôtel chez Amina</h3>
+                <p>Nuit à partir de 96€</p>
+                <div class="rating">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-star"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="plus">Afficher plus</a>
+        </section>
+
+        <!--populaire-->
+
+        <section class="populaire">
+          <h2>Les plus populaires<i class="fa-solid fa-star"></i></h2>
+          <a href="#">
+            <article class="blockp">
+              <div class="contenu_pop">
+                <img
+                  src="/img/Hébergement/Hôtel_le_soleil_du_matin.jpg"
+                  alt="hotel_soleil"
+                />
+                <div class="populaire_txt">
+                  <h3>Hôtel Le soleil du matin</h3>
+                  <p>Nuit à partir de 128€</p>
+                  <div class="rating rating_pop">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockp">
+              <div class="contenu_pop">
+                <img
+                  src="img/Hébergement/Au_coeur_de_l'eau_chambres_d'hôtes.jpg"
+                  alt="Chambre_hote"
+                />
+                <div class="populaire_txt">
+                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                  <p>Nuit à partir de 71€</p>
+                  <div class="rating rating_pop">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="blockp">
+              <div class="contenu_pop">
+                <img
+                  src="img/Hébergement/Hôtel_tout_bleu_et_blanc.jpg"
+                  alt="hotel_bleu_blanc"
+                />
+                <div class="populaire_txt">
+                  <h3>Hôtel Tout bleu et Blanc</h3>
+                  <p>Nuit à partir de 68€</p>
+
+                  <div class="rating rating_pop">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star"></i>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-star" style="color: #f2f2f2"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </a>
+        </section>
+      </div>
+
+      <!--ACTIVITES-->
+      <div id="titrea">
+        <h2>Activités à Marseille</h2>
+      </div>
+      <div id="activite">
+        <article class="colonne">
+          <a href="#">
+            <figure class="img1">
+              <img src="img/Activité/Le_vieux_port.jpg" alt="port" />
+              <h3>Le Vieux Port</h3>
+            </figure>
+          </a>
+          <article class="ligne">
+            <a href="#">
+              <figure class="img2">
+                <img src="img/Activité/Fort_de_pomègues.jpg" alt="fort" />
+                <h3>Fort de Pomègues</h3>
+              </figure>
+            </a>
+            <a href="#">
+              <figure class="img3">
+                <img src="img/Activité/Iles_du_frioul.jpg" alt="ile_frioul" />
+                <h3>Îles du Frioul</h3>
+              </figure>
+            </a>
+          </article>
+        </article>
+        <article class="colonne">
+          <a href="#">
+            <figure class="img4">
+              <img
+                src="img/Activité/Parc_national_des_calanques.jpg"
+                alt="Parc_calanques"
+              />
+              <h3>Parc National des Calanques</h3>
+            </figure>
+          </a>
+          <article class="ligne">
+            <a href="#">
+              <figure class="img5">
+                <img src="img/Activité/Notre_dame_de_la_garde.jpg" alt="dame" />
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </figure>
+            </a>
+            <a href="#">
+              <figure class="img6">
+                <img src="img/Activité/Longchamp.jpg" alt="Parc_Longchamp" />
+                <h3>Parc Longchamp</h3>
+              </figure>
+            </a>
+          </article>
+        </article>
+      </div>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer>
+      <nav>
+        <h3>A propos</h3>
+        <ul>
+          <li><a href="#">Fonctionnement du site</a></li>
+          <li><a href="#">Conditions générales de vente</a></li>
+          <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h3>Nos hébergements</h3>
+        <ul>
+          <li><a href="#">Charte qualité</a></li>
+          <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <h3>Assistance</h3>
+        <ul>
+          <li><a href="#">Centre d'aide</a></li>
+          <li><a href="#">Nous contacter</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
