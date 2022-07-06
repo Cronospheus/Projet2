@@ -10,7 +10,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
@@ -18,15 +18,14 @@ header,
 main {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 1.5rem;
 }
 h1 {
   font-size: 2.2rem;
   font-weight: bold;
   color: black;
 }
-h3 {
-  font-size: 1.6rem;
-}
+
 img {
   object-fit: cover;
 }
@@ -49,7 +48,7 @@ a {
 }
 #entete nav a {
   margin: 0rem 6.5rem 0rem 0rem;
-  padding: 5.5rem 3rem 0rem 0rem;
+  padding: 7.1rem 3rem 0rem 0rem;
 }
 
 .sub_nav a:hover {
@@ -122,8 +121,6 @@ button {
 
 #filtre ul li a {
   padding-right: 15px;
-  position: relative;
-  margin-right: 5px;
 }
 
 #filtre ul li a:hover {
@@ -144,6 +141,8 @@ button {
 #filtre .fa-solid {
   height: 45px;
   width: 45px;
+  position: relative;
+  margin-left: -4px;
 }
 
 .searchResult {
@@ -188,6 +187,10 @@ button {
   justify-content: space-around;
 }
 
+.blockh:hover {
+  transform: scale(1.05);
+}
+
 .hote {
   display: flex;
   flex-wrap: wrap;
@@ -226,8 +229,8 @@ button {
   flex-basis: 100%;
   margin: 20px 0 0 20px;
 }
-.blockh:hover {
-  transform: scale(1.05);
+.plus:hover {
+  color: #0065fc;
 }
 
 /*POPULAIRE*/
@@ -239,7 +242,8 @@ button {
 .populaire {
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 32%;
+  min-width: 32%;
   border-radius: 25px;
   background-color: #f2f2f2;
   margin: 0 0 0 50px;
@@ -278,15 +282,16 @@ button {
 /*ACTIVITE*/
 
 #titrea {
-  margin: 5rem 0 0 0;
+  margin: 4% 0 0 1.5%;
 }
 #activite,
 .colonne {
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  justify-content: center;
+  gap: 4rem;
 }
 #activite .ligne {
   display: flex;
@@ -380,15 +385,24 @@ footer h3 {
 }
 footer nav {
   margin-top: 2%;
-  padding-right: 21%;
+  padding: 0 20% 0 1rem;
 }
 footer nav li {
   list-style-type: none;
   margin-top: 8px;
   padding-top: 3px;
 }
+footer a:hover {
+  color: #0065fc;
+}
 
 /*MEDIAQUERRIES*/
+@media screen and (max-width: 768px) {
+  header,
+  main {
+    padding: 0;
+  }
+}
 
 /*ENTETE*/
 
@@ -397,6 +411,7 @@ footer nav li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 2px solid #f2f2f2;
   }
   #entete nav a {
     margin: 0 auto;
@@ -412,6 +427,8 @@ footer nav li {
   }
   .sub_nav {
     display: flex;
+    position: relative;
+    margin-bottom: -2px;
   }
   .sub_nav a {
     border-bottom: 2px solid #f2f2f2;
@@ -642,36 +659,6 @@ footer nav li {
 
 /*POPULAIRE*/
 
-@media screen and (max-width: 992px) {
-  .populaire h2 {
-    display: flex;
-    margin: 5rem 0;
-    justify-content: space-around;
-  }
-  .populaire {
-    flex-direction: column;
-    width: 100%;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0 0 40px 0;
-    border-radius: 0px;
-    align-content: center;
-  }
-  .rating_pop {
-    margin-top: 40px;
-  }
-  .rating_pop ul {
-    margin-top: 6.5rem;
-  }
-  .blockp img {
-    width: 130px;
-    height: 150px;
-  }
-  .blockp {
-    padding: 0.7rem 2rem;
-  }
-}
-
 @media all and (max-width: 768px) {
   .populaire h2 {
     display: flex;
@@ -696,7 +683,38 @@ footer nav li {
     height: 150px;
   }
   .blockp {
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .populaire h2 {
+    display: flex;
+    margin: 3rem;
+    padding: 0 12rem;
+  }
+  .populaire {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0 0 40px 0;
+    border-radius: 0px;
+  }
+  .populaire a {
+    width: 85%;
+    padding-left: 15%;
+  }
+  .rating_pop {
+    margin-top: 40px;
+  }
+  .blockp img {
+    width: 130px;
+    height: 150px;
+  }
+  .blockp {
+    padding: 0.7rem 2rem 0.7rem 2rem;
   }
 }
 
@@ -755,7 +773,7 @@ footer nav li {
     justify-content: center;
   }
   footer nav {
-    padding-bottom: 2rem;
+    padding: 5rem;
   }
 }
 
